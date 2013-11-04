@@ -1,0 +1,14 @@
+{
+    "name": "joindin/guzzle-client",
+    "description": "A Guzzle client for consuming the Joind.in API",
+    "require": {
+        "guzzle/guzzle": "3.7.*"
+    },
+    "authors": [
+        {
+            "name": "Sam Evaskitas",
+            "email": "sam.evaskitas@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
