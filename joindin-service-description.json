@@ -1,0 +1,34 @@
+{
+    "name": "joind.in",
+    "apiVersion": "2.1",
+    "baseUrl": "http://api.dev.joind.in",
+    "description": "Joind.in is an open source website (and RESTful API) that allows event promoters, speakers and attendees to post events and talks and leave feedback for both.",
+    "operations": {
+        "getEvents": {
+            "httpMethod": "GET",
+            "uri": "v2.1/events/"
+        },
+        "getEvent": {
+            "httpMethod": "GET",
+            "uri": "/events/{id}",
+            "parameters": {
+                "id": {
+                    "location": "uri"
+                }
+            }
+        },
+        "getTalks": {
+            "httpMethod": "GET",
+            "uri": "/talks/"
+        },
+        "getTalk": {
+            "httpMethod": "GET",
+            "uri": "/talks/{id}",
+            "parameters": {
+                "id": {
+                    "location": "uri"
+                }
+            }
+        }
+    }    
+}
