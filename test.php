@@ -11,4 +11,31 @@ $api->setDescription($desc);
 $command = $api->getCommand('getEvents');
 $response = $api->execute($command);
 
+<<<<<<< Updated upstream
 print_r($response);
+=======
+print_r($response);
+unset($command);
+unset($reponse);
+
+$command = $api->getCommand('getEventTalks');
+$response = $api->execute($command, compact($eventId));
+
+print_r($response);
+unset($command);
+unset($reponse);
+
+$command = $api->getCommand('getEventTalkComments');
+$response = $api->execute($command, compact($eventId, $talkId));
+
+print_r($response);
+unset($command);
+unset($reponse);
+
+$command = $api->getCommand('getUser');
+$response = $api->execute($command, compact($userId));
+
+print_r($response);
+unset($command);
+unset($reponse);
+>>>>>>> Stashed changes

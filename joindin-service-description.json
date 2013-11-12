@@ -10,13 +10,20 @@
         },
         "getEvent": {
             "httpMethod": "GET",
+<<<<<<< Updated upstream
             "uri": "/events/{id}",
             "parameters": {
                 "id": {
+=======
+            "uri": "v2.1/events/{eventId}",
+            "parameters": {
+                "eventId": {
+>>>>>>> Stashed changes
                     "location": "uri"
                 }
             }
         },
+<<<<<<< Updated upstream
         "getTalks": {
             "httpMethod": "GET",
             "uri": "/talks/"
@@ -26,6 +33,46 @@
             "uri": "/talks/{id}",
             "parameters": {
                 "id": {
+=======
+        "getEventTalks": {
+            "httpMethod": "GET",
+            "uri": "v2.1/events/{eventId}/talks/",
+            "parameters": {
+                "eventId": {
+                    "location": "uri"
+                }
+            }
+        },
+        "getEventTalk": {
+            "httpMethod": "GET",
+            "uri": "v2.1/events/{eventId}/talks/{talkId}",
+            "parameters": {
+                "eventId": {
+                    "location": "uri"
+                },
+                "talkId": {
+                    "location": "uri"
+                }
+            }
+        },
+        "getEventTalkComments": {
+            "httpMethod": "GET",
+            "uri": "v2.1/events/{eventId}/talks/{talkId}/comments",
+            "parameters": {
+                "eventId": {
+                    "location": "uri"
+                },
+                "talkId": {
+                    "location": "uri"
+                }
+            }
+        },
+        "getUser": {
+            "httpMethod": "GET",
+            "uri": "v2.1/users/{userId}",
+            "parameters": {
+                "userId": {
+>>>>>>> Stashed changes
                     "location": "uri"
                 }
             }
